@@ -1,35 +1,49 @@
 Rails.application.routes.draw do
-  get 'pictures/index'
+  #get 'reviews/index'
 
-  get 'pictures/show'
+  #get 'reviews/new'
 
-  get 'pictures/new'
+  #get 'reviews/create'
 
-  get 'pictures/create'
+  #get 'reviews/edit'
 
-  get 'pictures/edit'
+  #get 'reviews/update'
 
-  get 'pictures/update'
+  #get 'reviews/destroy'
 
-  get 'pictures/destroy'
+  #get 'pictures/index'
 
-  get 'themes/index'
+  #get 'pictures/show'
 
-  get 'themes/show'
+  #get 'pictures/new'
 
-  get 'themes/new'
+  #get 'pictures/create'
 
-  get 'themes/create'
+  #get 'pictures/edit'
 
-  get 'themes/edit'
+  #get 'pictures/update'
 
-  get 'themes/update'
+  #get 'pictures/destroy'
 
-  get 'themes/destroy'
+  #get 'themes/index'
 
-  get 'pages/home'
+  #get 'themes/show'
 
-  get 'pages/search'
+  #get 'themes/new'
+
+  #get 'themes/create'
+
+  #get 'themes/edit'
+
+  #get 'themes/update'
+
+  #get 'themes/destroy'
+
+  #get 'pages/home'
+
+  #get 'pages/search'
+
+  root to: 'pages#home'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
