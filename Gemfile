@@ -34,7 +34,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 gem 'figaro'
 gem 'cloudinary'
-gem 'carrierwave'
+gem 'carrierwave', '~> 0.11.2'
 
 #MY GEM
 gem 'simple_form', '~> 3.5'
