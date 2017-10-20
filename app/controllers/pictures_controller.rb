@@ -47,9 +47,8 @@ class PicturesController < ApplicationController
   end
 
   def set_theme
-    @theme = Theme.find(params[:id])
+    @theme = Theme.find(params[:theme_id])
   end
-
 
   def picture_params
     params.require(:picture).permit(:title, :description, :photo)
