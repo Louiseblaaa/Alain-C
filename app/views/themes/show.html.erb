@@ -1,2 +1,6 @@
-<h1>Themes#show</h1>
-<p>Find me in app/views/themes/show.html.erb</p>
+<%= cl_image_tag @theme.photo, height: 350, width: 450, crop: :fill, class: "img-rounded img-responsive img-show", alt: "Not Image"%>
+
+
+<%= @theme.title %>
+<%= @theme.description %>
+

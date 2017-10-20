@@ -6,7 +6,6 @@ class ThemesController < ApplicationController
   end
 
   def show
-    @theme
   end
 
   def new
