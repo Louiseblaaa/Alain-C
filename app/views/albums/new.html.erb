@@ -1,2 +1,7 @@
-<h1>Albums#new</h1>
-<p>Find me in app/views/albums/new.html.erb</p>
+<%= simple_form_for [@theme, @album] do |f| %>
+<%= f.error_notification %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :photo %>
+  <%= f.button :submit %>
+<% end %>

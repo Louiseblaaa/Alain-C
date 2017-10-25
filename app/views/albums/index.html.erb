@@ -1,2 +1,7 @@
-<h1>Albums#index</h1>
-<p>Find me in app/views/albums/index.html.erb</p>
+<% @albums.each do |album| %>
+  <%= link_to theme_album_path(album) do %>
+    <%= album.title %>
+    <%= album.description %>
+    <%= cl_image_tag theme.photo, height: 350, width: 450, crop: :fill, class: "img-rounded img-responsive img-show", alt: "Not Image"%>
+  <% end %>
+<% end %>
