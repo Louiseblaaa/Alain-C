@@ -1,5 +1,19 @@
 Rails.application.routes.draw do
 
+  get 'albums/index'
+
+  get 'albums/show'
+
+  get 'albums/new'
+
+  get 'albums/create'
+
+  get 'albums/edit'
+
+  get 'albums/update'
+
+  get 'albums/destroy'
+
   resources :themes do
     resources :albums do
       resources :pictures do
