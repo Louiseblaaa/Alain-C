@@ -1,22 +1,12 @@
 Rails.application.routes.draw do
-  get 'albums/index'
-
-  get 'albums/new'
-
-  get 'albums/create'
-
-  get 'albums/edit'
-
-  get 'albums/update'
-
-  get 'albums/destroy'
 
   resources :themes do
-    resources :pictures do
+    resources :albums do
+      resources :pictures do
+        resources :reviews
+      end
       resources :reviews
     end
-    resources :reviews
-  end
 
   root to: 'pages#home'
 
