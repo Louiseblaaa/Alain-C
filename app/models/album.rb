@@ -5,7 +5,7 @@ class Album < ApplicationRecord
   belongs_to :theme
   has_many :pictures
 
-  validates :title
+  validates :title, presence: :true
   validates :description, presence: true
   validates :photo, presence: :true
 
