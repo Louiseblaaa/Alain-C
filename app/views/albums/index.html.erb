@@ -1,7 +1,7 @@
-<% @albums.each do |album| %>
-  <%= link_to theme_album_path(album) do %>
-    <%= album.title %>
-    <%= album.description %>
-    <%= cl_image_tag theme.photo, height: 350, width: 450, crop: :fill, class: "img-rounded img-responsive img-show", alt: "Not Image"%>
+<% @theme.albums.each do |album| %>
+  <%= link_to theme_path(album) do %>
+    <%= theme.album.title %>
+    <%= theme.album.description %>
+    <%= cl_image_tag theme.album.photo, height: 350, width: 450, crop: :fill, class: "img-rounded img-responsive img-show", alt: "Not Image"%>
   <% end %>
 <% end %>
